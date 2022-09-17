@@ -59,7 +59,7 @@ local function det(m)
         m[1][1]*m[2][3]*m[3][2]-m[1][2]*m[2][1]*m[3][3]-m[1][3]*m[2][2]*m[3][1]
 end
 
-sdf.from_pts = function(p, q, r, t)
+sdf.from_pts = function(p, q, r)
     local xp, yp = complex.get(p)
     local np = xp*xp+yp*yp
     local xq, yq = complex.get(q)
